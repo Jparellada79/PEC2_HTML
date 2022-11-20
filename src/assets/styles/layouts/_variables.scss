@@ -1,0 +1,48 @@
+        //variables 
+        @use "sass:color";
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        $font-family-serif-lobster: "sans-serif",
+        "Oswald",
+        serif;
+        $textoblanco:#ffffff;
+        $textonegro: #000000;
+        @mixin titulo($tamano,
+        $color) {
+            text-transform: capitalize;
+            font-size: $tamano;
+            font-weight: bolder;
+            color: $color;
+        }
+        
+        @mixin texto( $color) {
+            font-size: 1.2rem;
+            color: $color
+        }
+        
+        @mixin tema {
+            color: $pink-900;
+            background-color: $pink-100;
+            border-color: $pink-900;
+        }
+        
+        @mixin centrarimagen() {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        @mixin textocantante($left,
+        $top) {
+            left: $left;
+            top: $top;
+            position: absolute;
+            padding: 10px;
+        }
+        
+        @mixin grid_fex() {
+            align-content: center;
+            justify-content: space-evenly;
+            width: 90%;
+            margin: auto;
+        }
