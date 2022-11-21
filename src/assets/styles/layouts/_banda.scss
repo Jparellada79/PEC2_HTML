@@ -31,69 +31,24 @@
     .titulo3 {
         @include titulo(2.5rem, $textonegro);
     }
-    
-    .texto {}
-    /****************************
-      Menú de navegación del sitio
-       *****************************/
-    /****************************
-      Menú de navegación del sitio
-       *****************************/
-    
-    .rrss {
-        &__a {
-            margin-right: 35px
-        }
-        &__li {
-            display: inline;
-        }
-        &__img:hover {
-            transform: scale(2);
-        }
-    }
-    
-    .navegacion {
-        &__a {
-            padding: 5px;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 30px;
-            background-color: $primary;
-            color: $pink-900;
-        }
-        &__li {
-            align-items: center;
-            padding: 15px;
-            text-align: center;
-            list-style: none;
-            margin-right: 15px;
-        }
-        @media (min-width: 600px) {
-            &__li {
-                padding: 0px;
-                display: inline;
-            }
-        }
-    }
     /****************************
          Grid página principal
         *****************************/
     
     .grid {
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
         background-image: url(../images/fondoindex.jpg);
         background-position: center;
         background-size: cover;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
         @media (min-width: 900px) {
             display: grid;
-            row-gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(8, 1fr);
-            padding-left: 10%;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
             padding-right: 10%;
+            padding-left: 10%;
         }
         &__item1 {
             grid-row: 1;
@@ -137,27 +92,24 @@
         &__item2 {
             grid-row: 1/9;
             grid-column: 2;
-            background-color: rgb(255, 255, 255, 0.2);
+            background-color: rgb(255, 255, 255, .2);
         }
     }
     
     .grid2 {
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
+        padding: 20px 20px 20px 20px;
         @media (min-width: 900px) {
             display: grid;
-            row-gap: 20px;
-            grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(4, 1fr);
-            padding-left: 10%;
+            grid-template-columns: repeat(6, 1fr);
+            row-gap: 20px;
             padding-right: 10%;
+            padding-left: 10%;
         }
         &__item1 {
+            display: flex;
             grid-row: 1;
             grid-column: 1/4;
-            display: flex;
             align-items: flex-end;
         }
         &__item2 {
@@ -175,9 +127,9 @@
             @include texto($textonegro);
         }
         &__item4 {
-            text-align: left;
             grid-row: 2/4;
             grid-column: 5/7;
+            text-align: left;
             @include texto($textonegro);
         }
         &__item5 {
@@ -195,9 +147,9 @@
             display: none;
             @media (min-width: 900px) {
                 display: flex;
-                justify-content: center;
                 grid-row: 2/5;
                 grid-column: 3/5;
+                justify-content: center;
             }
         }
     }
@@ -227,8 +179,8 @@
     
     .cantante {
         @include tema;
-        margin: 10px;
         position: relative;
+        margin: 10px;
         &__img {
             @include centrarimagen;
         }

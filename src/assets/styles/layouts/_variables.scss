@@ -8,10 +8,10 @@
         $textonegro: #000000;
         @mixin titulo($tamano,
         $color) {
-            text-transform: capitalize;
             font-size: $tamano;
             font-weight: bolder;
             color: $color;
+            text-transform: capitalize;
         }
         
         @mixin texto( $color) {
@@ -34,9 +34,9 @@
         
         @mixin textocantante($left,
         $top) {
-            left: $left;
-            top: $top;
             position: absolute;
+            top: $top;
+            left: $left;
             padding: 10px;
         }
         
