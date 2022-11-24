@@ -1,32 +1,19 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
-
-
-/**
- * Import variables
- */
-
+// Lista-variables;
+$list-group-color: #10797f;
+$list-group-bg: #e9f1f1;
+$list-group-border-color: #10797f;
+$list-group-border-width: 10px;
+// card-variables;
+$card-border-color: #10797f;
+$card-cap-bg: rgba(#10797f, .03);
+$card-cap-color:#10797f;
+$card-bg: #e9f1f1;
+// navbar-variables;
+$navbar-nav-link-padding-x: 2.5rem;
+$navbar-dark-brand-hover-color:#10797f;
 @import "bootstrap/scss/bootstrap";
 @import "layouts/variables";
-
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
-
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
+@import "layouts/general";
+@import "layouts/noticias";
+@import "layouts/index";
 @import "layouts/banda";
-
-/**
- * Do NOT include anything else in this file!
- */

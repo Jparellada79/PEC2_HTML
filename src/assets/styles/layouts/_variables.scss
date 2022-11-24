@@ -6,6 +6,8 @@
         serif;
         $textoblanco:#ffffff;
         $textonegro: #000000;
+        $colorCards:#10797f;
+        $hoverMenuPie:#4d232d;
         @mixin titulo($tamano,
         $color) {
             font-size: $tamano;
