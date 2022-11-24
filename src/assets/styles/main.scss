@@ -10,7 +10,8 @@ $card-cap-color:#10797f;
 $card-bg: #e9f1f1;
 // navbar-variables;
 $navbar-nav-link-padding-x: 2.5rem;
-$navbar-dark-brand-hover-color:#10797f;
+$navbar-dark-brand-hover-color:#10797f; // themes-variables
+$theme-colors: ( primary: #ff5126, "light": #e9f1f1, "dark": #000000);
 @import "bootstrap/scss/bootstrap";
 @import "layouts/variables";
 @import "layouts/general";

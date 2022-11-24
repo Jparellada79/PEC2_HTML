@@ -21,30 +21,9 @@
             color: $color
         }
         
-        @mixin tema {
-            color: $pink-900;
-            background-color: $pink-100;
-            border-color: $pink-900;
-        }
-        
-        @mixin centrarimagen() {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-        }
-        
-        @mixin textocantante($left,
-        $top) {
-            position: absolute;
-            top: $top;
-            left: $left;
-            padding: 10px;
-        }
-        
-        @mixin grid_fex() {
-            align-content: center;
-            justify-content: space-evenly;
-            width: 90%;
-            margin: auto;
+        @mixin grid_x() {
+            display: grid;
+            row-gap: 20px;
+            padding-right: 10%;
+            padding-left: 10%;
         }
